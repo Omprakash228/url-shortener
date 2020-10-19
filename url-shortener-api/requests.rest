@@ -1,0 +1,13 @@
+###
+POST http://localhost:3000/process
+Content-Type: application/json
+
+{
+    "fullUrl": "www.google.com",
+    "shortUrl": "google1"
+}
+
+###
+GET http://localhost:3000/redirect/google1
+
+ 
