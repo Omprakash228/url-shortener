@@ -1,0 +1,189 @@
+:root {
+  --white: #fff;
+  --cyan: hsl(180, 66%, 49%);
+  --base-clr: hsl(225, 33%, 95%);
+  --dark-violet: hsl(257, 27%, 26%);
+  --red: hsl(0, 87%, 67%);
+  --gray: hsl(247, 5%, 58%);
+  --grayish-violet: hsl(257, 7%, 63%);
+  --violet-bg: rgb(51, 40, 75);
+  --dark-blue: hsl(255, 11%, 22%);
+  --dark-violet: hsl(260, 8%, 14%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+}
+body header {
+  padding: 50px 0;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  margin: 0 auto;
+}
+body header .header-left,
+body header .header-right {
+  display: flex;
+  align-items: center;
+}
+body header .header-left .logo,
+body header .header-right .logo {
+  width: 121px;
+  height: 33px;
+  margin-right: 20px;
+  background: url("./assets/logo.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+body header .header-left .option,
+body header .header-right .option {
+  margin: 0 20px;
+  color: var(--gray);
+  cursor: pointer;
+  font-size: 16px;
+}
+body header .header-left .option:hover,
+body header .header-right .option:hover {
+  color: var(--dark-violet);
+}
+body header .header-left .signup-btn,
+body header .header-right .signup-btn {
+  margin-left: 20px;
+  background: var(--cyan);
+  color: var(--white);
+  border-radius: 40px;
+  font-size: 14px;
+  padding: 10px 30px;
+  cursor: pointer;
+}
+body header .header-left .signup-btn:hover,
+body header .header-right .signup-btn:hover {
+  opacity: 0.7;
+}
+body section .page-desc {
+  display: flex;
+  width: 90%;
+  margin-left: 10%;
+}
+body section .page-desc .text-ctr {
+  width: 45%;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body section .page-desc .text-ctr .text-header {
+  font-size: 50px;
+  font-weight: 700;
+  color: var(--violet-bg);
+  line-height: 1.3;
+}
+body section .page-desc .text-ctr .text-desc {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--gray);
+}
+body section .page-desc .text-ctr .get-started-btn {
+  background: var(--cyan);
+  color: var(--white);
+  width: max-content;
+  margin-top: 35px;
+  padding: 15px 45px;
+  border-radius: 45px;
+  font-weight: 500;
+  cursor: pointer;
+}
+body section .page-desc .text-ctr .get-started-btn:hover {
+  opacity: 0.7;
+}
+body section .page-desc .working-img {
+  width: 50%;
+}
+body section .content-ctr {
+  width: 100%;
+  height: 450px;
+  margin-top: 200px;
+  background: var(--base-clr);
+  position: relative;
+}
+body section .content-ctr .form-ctr {
+  width: 80%;
+  padding: 50px;
+  height: 220px;
+  background: url("./assets/bg-shorten-desktop.svg"), linear-gradient(var(--violet-bg), var(--violet-bg));
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  position: absolute;
+  top: -110px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body section .content-ctr .form-ctr .form-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+body section .content-ctr .form-ctr .form-row input {
+  height: 50px;
+  padding: 15px 35px;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+}
+body section .content-ctr .form-ctr .form-row .url-input {
+  width: 74%;
+}
+body section .content-ctr .form-ctr .form-row .preferred-name {
+  width: 24%;
+}
+body section .content-ctr .form-ctr .form-row .shorten-btn {
+  width: 200px;
+  height: 50px;
+  margin-left: auto;
+  background: var(--cyan);
+  color: var(--white);
+  border-radius: 10px;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+}
+body section .content-ctr .form-ctr .form-row .shorten-btn:hover {
+  opacity: 0.9;
+}
+body section .content-ctr .stat-desc-ctr {
+  width: 80%;
+  position: absolute;
+  left: 50%;
+  top: 210px;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body section .content-ctr .stat-desc-ctr .stat-desc-header {
+  font-weight: 600;
+  color: var(--violet-bg);
+  font-size: 35px;
+}
+body section .content-ctr .stat-desc-ctr .stat-desc {
+  font-size: 16px;
+  color: var(--gray);
+}
