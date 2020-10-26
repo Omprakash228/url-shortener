@@ -327,6 +327,8 @@ body section .footer .footer-content-ctr .links-ctr .column .link-title {
 body section .footer .footer-content-ctr .links-ctr .column .link {
   font-size: 16px;
   color: var(--gray);
+  cursor: pointer;
+  margin-top: 5px;
 }
 body section .footer .footer-content-ctr .links-ctr .social-media-ctr {
   width: 15%;
@@ -351,4 +353,5 @@ body section .footer .footer-content-ctr .links-ctr .social-media-ctr .social-me
   width: 25px;
   background-repeat: no-repeat;
   background-size: contain;
+  cursor: pointer;
 }

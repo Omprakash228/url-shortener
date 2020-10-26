@@ -359,6 +359,8 @@ body {
             .link {
               font-size: 16px;
               color: var(--gray);
+              cursor: pointer;
+              margin-top: 5px;
             }
           }
           .social-media-ctr {
@@ -383,6 +385,7 @@ body {
               width: 25px;
               background-repeat: no-repeat;
               background-size: contain;
+              cursor: pointer;
             }
           }
         }
