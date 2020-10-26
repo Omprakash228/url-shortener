@@ -2,7 +2,7 @@ const Urls = require('../models/urlEntity');
 
 const getValidId = function() {
     let randomId = getRandomId();
-    while(Urls.where({ _shortUrl: randomId }).countDocuments > 0) {
+    while(Urls.where({ _shortUrl: randomId }).length > 0) {
         randomId = getRandomId();
     }
     return randomId;
